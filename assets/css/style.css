@@ -11,6 +11,21 @@ ul {
 
 
 
+/* ======= Scrollbar ======= */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #f1e9e9;
+}
+
+
+*::-webkit-scrollbar-thumb {
+    background-color: #582965;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
 
 
 
@@ -98,20 +113,66 @@ main .cartao-pokemon:hover {
 main .cartao-pokemon .informacoes {
     display: flex;
     justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
 }
 
 
 main .cartao-pokemon .informacoes span {
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+    /* background-color: gray; */
 }
 
 
+main .cartao-pokemon .tipos {
+    /* background-color: white; */
+    display: flex;
+    gap: 15px;
+}
 
 
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
 
 
+.grama {
+    background-color: #7ac74c;
+}
 
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
 
 
 
@@ -122,7 +183,7 @@ main .cartao-pokemon .informacoes span {
 
 
 /* ======= Responsive/Responsividade ======= */
-@media (max-width: 991px){
+/* @media (max-width: 991px){
 
     html {
         font-size: 55%;
@@ -141,4 +202,4 @@ main .cartao-pokemon .informacoes span {
         font-size: 50%;
     }
 
-}
+} */
