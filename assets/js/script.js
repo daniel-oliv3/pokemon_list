@@ -19,17 +19,19 @@ botaoAlterarTema.addEventListener("click", () => {
 
     // console.log(modoEscuroEstaAtivo);
 
+    body.classList.toggle("modo-escuro");
+
     if(modoEscuroEstaAtivo){
         // console.log("modo escuro esta ativo");
         /* Passo 7 - Remover a classe do modo-escuro do body */
-        body.classList.remove("modo-escuro");
-        imagemBotaoTrocaDeTema.setAttribute("src", "./assets/img/sun.png");
-        /* Passo 8 - Trocar a imagem do botão de alterar tema para o sol */
+        // body.classList.remove("modo-escuro");
 
+        /* Passo 8 - Trocar a imagem do botão de alterar tema para o sol */
+        imagemBotaoTrocaDeTema.setAttribute("src", "./assets/img/sun.png");
     } else {
         /* Passo 4 - Adicionar a classe modo-escuro no body */
         // console.log(body.classList);
-        body.classList.add("modo-escuro");
+        // body.classList.add("modo-escuro");
 
         /* Passo 5 - Trocar a imagem do botão de alterar tema para lua */
         imagemBotaoTrocaDeTema.setAttribute("src", "./assets/img/moon.png");
